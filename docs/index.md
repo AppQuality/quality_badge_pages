@@ -1,8 +1,29 @@
-## Welcome to GitHub Pages
+## Quality Badge Setup
+To include the quality badge to your web page, you have to use the HTML snippet provided.
 
-You can use the [editor on GitHub](https://github.com/AppQuality/quality_badge_pages/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Please insert the snippet into your web pages, right above the </body> tag.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+```js
+<script>
+  (function (ap, p, qua, l, i, t, y) {
+    ap['appqbdg'] = l; ap[l] = ap[l] || function () { (ap[l].q = ap[l].q || []).push(arguments) };
+    t = p.createElement(qua), y = p.getElementsByTagName(qua)[0];
+    t.id = l; t.src = i; t.async = 1; y.parentNode.insertBefore(t, y);
+  }(window, document, 'script', 'appqbadge', '(...)qualityWidget.js'));
+  appqbadge('init', { id: "AQ-XXXXXXX-YY", target: 'appquality-quality-badge' });
+</script>
+```
+The widget code requires a container element in your page, the container will be populated with the badge or link widget according to your configuration.
+For example, if you wish to add the Quality badge in some place in your page, simply add an html element such as:
+
+```
+<div id="appquality-quality-badge"></div>
+```
+
+This element can be a div, span or whatever you wish basically.
+
+Having this element in place, insert the AnnounceKit widget code provided to you in your Widget configuration page.
+Note that the widget code contains a placeholder: YOUR_ELEMENT_SELECTOR. You need to set this selector to target the element you created before.
 
 ### Markdown
 
