@@ -24,4 +24,4 @@ This element can be a div, span or whatever you wish basically.
 
 ### Support or Contact
 
-Having trouble with Pages? Contact support (info@app-quality.com) and we’ll help you sort it out.
+Having trouble with Pages? Contact support [info@app-quality.com](info@app-quality.com) and we’ll help you sort it out.
